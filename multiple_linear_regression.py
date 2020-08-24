@@ -30,5 +30,5 @@ from sklearn.metrics import r2_score
 r_squared = r2_score(y_test, predictions)
 N = len(x_test)
 k = 5
-adjusted_r_squared = 1 - (((1 - (r_squared ** 2)) * (N - 1)) / (N - p - 1))
+adjusted_r_squared = 1 - (((1 - (r_squared ** 2)) * (N - 1)) / (N - k - 1))
 print(f'The adjusted R score of our model is: {adjusted_r_squared}')
